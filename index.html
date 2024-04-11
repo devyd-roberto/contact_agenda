@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda Virtual - Escola</title>
+<link rel="stylesheet" href="./main.css">
+</head>
+
+<header>
+
+    <img src="./imagens/call-8033050_640.png" alt="">
+    <h1>Agenda Virtual</h1>
+    <nav>
+        <h1>Contatos</h1>
+    </nav>
+</header>
+
+
+<body>
+
+<div class="container">
+    <h2>Armazene seus contatos</h2>
+
+    <form id="formContato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <button type="submit">Adicionar Contato</button>
+        
+        
+    </form>
+
+    <table id="tabelaContatos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+            </tr>
+        </thead >
+        <tbody id="linhaContatos">
+            <!-- Linhas de contatos serão adicionadas aqui -->
+        </tbody>
+    </table>
+    <button onclick="limparTabela()">Limpar Tabela</button>
+</div>
+
+<script src="./main.js"></script>
+    
+
+
+</body>
+</html>
